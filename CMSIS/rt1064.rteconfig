@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<configuration xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+
+  <device Dclock="600000000" Dcore="Cortex-M7" Dendian="Little-endian" Dfamily="MIMXRT1064" Dfpu="DP_FPU" Dmpu="MPU" Dname="MIMXRT1064xxxxA" Dvariant="MIMXRT1064DVL6A" Dvendor="NXP:11" Pname="" info="ARM Cortex-M7 600 MHz, 4 MB ROM" url="http://www.keil.com/dd2/nxp/mimxrt1064dvl6a">
+
+    <package info="Device Family Pack for MIMXRT1064" name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+  </device>
+
+  <toolchain Tcompiler="IAR" Toutput="exe"/>
+
+  <components>
+
+    <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.3.0">
+
+      <package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.6.0"/>
+
+      <file category="doc" name="CMSIS/Documentation/Core/html/index.html"/>
+
+      <file category="include" name="CMSIS/Core/Include/"/>
+
+    </component>
+
+    <component Cclass="CMSIS" Cgroup="DSP" Cvariant="Library" Cvendor="ARM" Cversion="1.7.0">
+
+      <package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.6.0"/>
+
+      <file category="doc" name="CMSIS/Documentation/DSP/html/index.html"/>
+
+      <file category="header" name="CMSIS/DSP/Include/arm_math.h"/>
+
+      <file category="library" condition="CM7_DP_LE_IAR" name="CMSIS/DSP/Lib/IAR/iar_cortexM7lf_math.a" src="CMSIS/DSP/Source/IAR"/>
+
+    </component>
+
+    <component Capiversion="2.2.0" Cclass="CMSIS Driver" Cgroup="USB Device" Csub="Custom" Cvendor="ARM" Cversion="2.2.0">
+
+      <package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.6.0"/>
+
+      <file category="header" name="CMSIS/Driver/Include/Driver_USBD.h"/>
+
+      <file attr="template" category="sourceC" name="CMSIS/Driver/DriverTemplates/Driver_USBD.c" select="USB Device Driver"/>
+
+    </component>
+
+    <component Capiversion="2.2.0" Cclass="CMSIS Driver" Cgroup="USB Host" Csub="Custom" Cvendor="ARM" Cversion="2.2.0">
+
+      <package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.6.0"/>
+
+      <file category="header" name="CMSIS/Driver/Include/Driver_USBH.h"/>
+
+      <file attr="template" category="sourceC" name="CMSIS/Driver/DriverTemplates/Driver_USBH.c" select="USB Host Driver"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="adc_12b1msps_sar" Cvendor="NXP" Cversion="2.0.2" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_adc.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_adc.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="adc_etc" Cvendor="NXP" Cversion="2.0.1" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_adc_etc.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_adc_etc.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="camera-common" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="header" deviceDependent="1" name="components/video/camera/fsl_camera.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="camera-device-common" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="header" deviceDependent="1" name="components/video/camera/device/fsl_camera_device.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="camera-device-ov7725" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="components/video/camera/device/ov7725/fsl_ov7725.c"/>
+
+      <file category="header" deviceDependent="1" name="components/video/camera/device/ov7725/fsl_ov7725.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="camera-device-sccb" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="components/video/camera/device/sccb/fsl_sccb.c"/>
+
+      <file category="header" deviceDependent="1" name="components/video/camera/device/sccb/fsl_sccb.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="camera-receiver-common" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="header" deviceDependent="1" name="components/video/camera/receiver/fsl_camera_receiver.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="camera-receiver-csi" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="components/video/camera/receiver/csi/fsl_csi_camera_adapter.c"/>
+
+      <file category="header" deviceDependent="1" name="components/video/camera/receiver/csi/fsl_csi_camera_adapter.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="clock" Cvendor="NXP" Cversion="2.1.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_clock.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_clock.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="common" Cvendor="NXP" Cversion="2.1.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_common.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_common.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="csi" Cvendor="NXP" Cversion="2.0.3" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_csi.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_csi.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="dmamux" Cvendor="NXP" Cversion="2.0.2" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_dmamux.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_dmamux.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="edma" Cvendor="NXP" Cversion="2.1.8" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_edma.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_edma.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flexio" Cvendor="NXP" Cversion="2.0.2" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_flexio.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_flexio.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flexio_i2c_master" Cvendor="NXP" Cversion="2.1.8" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_flexio_i2c_master.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_flexio_i2c_master.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flexio_spi" Cvendor="NXP" Cversion="2.1.3" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_flexio_spi.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_flexio_spi.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flexio_spi_edma" Cvendor="NXP" Cversion="2.1.3" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_flexio_spi_edma.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_flexio_spi_edma.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flexspi" Cvendor="NXP" Cversion="2.1.1" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_flexspi.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_flexspi.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="gpio" Cvendor="NXP" Cversion="2.0.2" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_gpio.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_gpio.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="i2c" Cvendor="NXP" Cversion="2.1.9" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_lpi2c.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_lpi2c.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="i2c_edma" Cvendor="NXP" Cversion="2.1.6" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_lpi2c_edma.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_lpi2c_edma.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="lists" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="components/lists/generic_list.c"/>
+
+      <file category="header" deviceDependent="1" name="components/lists/generic_list.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="pit" Cvendor="NXP" Cversion="2.0.2" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_pit.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_pit.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="pwm" Cvendor="NXP" Cversion="2.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_pwm.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_pwm.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="video-common" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="components/video/fsl_video_common.c"/>
+
+      <file category="header" deviceDependent="1" name="components/video/fsl_video_common.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="video-i2c" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="components/video/i2c/fsl_video_i2c.c"/>
+
+      <file category="header" deviceDependent="1" name="components/video/i2c/fsl_video_i2c.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Project Template" Csub="RTE_Device" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file attr="config" category="header" deviceDependent="1" name="template/RTE_Device.h" version="1.0.0"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Utilities" Csub="serial_manager_usb_config" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
+
+      <package name="EVK-MIMXRT1064_BSP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="header" deviceDependent="1" name="component_examples/config/usb_device_config.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="Startup" Csub="MIMXRT1064_startup" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file attr="config" category="sourceAsm" condition="iar" deviceDependent="1" name="iar/startup_MIMXRT1064.s" version="1.0.0"/>
+
+      <file attr="config" category="linkerScript" condition="iar" deviceDependent="1" name="iar/MIMXRT1064xxxxx_flexspi_nor.icf" version="1.0.0"/>
+
+      <file attr="config" category="linkerScript" condition="iar" deviceDependent="1" name="iar/MIMXRT1064xxxxx_flexspi_nor_sdram.icf" version="1.0.0"/>
+
+      <file attr="config" category="linkerScript" condition="iar" deviceDependent="1" name="iar/MIMXRT1064xxxxx_ram.icf" version="1.0.0"/>
+
+      <file attr="config" category="linkerScript" condition="iar" deviceDependent="1" name="iar/MIMXRT1064xxxxx_sdram.icf" version="1.0.0"/>
+
+      <file attr="config" category="linkerScript" condition="iar" deviceDependent="1" name="iar/MIMXRT1064xxxxx_sdram_txt.icf" version="1.0.0"/>
+
+      <file attr="config" category="header" deviceDependent="1" name="MIMXRT1064.h" version="1.0.0"/>
+
+      <file attr="config" category="header" deviceDependent="1" name="MIMXRT1064_features.h" version="1.0.0"/>
+
+      <file attr="config" category="header" deviceDependent="1" name="fsl_device_registers.h" version="1.0.0"/>
+
+      <file attr="config" category="sourceC" deviceDependent="1" name="system_MIMXRT1064.c" version="1.0.0"/>
+
+      <file attr="config" category="header" deviceDependent="1" name="system_MIMXRT1064.h" version="1.0.0"/>
+
+    </component>
+
+    <component Cbundle="MCUXpresso SDK Operating System" Cclass="Operating System" Cgroup="FreeRTOS Operating System" Csub="freertos" Cvendor="NXP" Cversion="9.0.0">
+
+      <package name="Middleware" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="10.0.0"/>
+
+      <file category="doc" name="freertos/License/license.txt"/>
+
+      <file category="header" name="freertos/Source/include/FreeRTOS.h"/>
+
+      <file category="header" name="freertos/Source/include/StackMacros.h"/>
+
+      <file category="header" name="freertos/Source/include/croutine.h"/>
+
+      <file category="header" name="freertos/Source/include/deprecated_definitions.h"/>
+
+      <file category="header" name="freertos/Source/include/event_groups.h"/>
+
+      <file category="header" name="freertos/Source/include/freertos_tasks_c_additions.h"/>
+
+      <file category="header" name="freertos/Source/include/list.h"/>
+
+      <file category="header" name="freertos/Source/include/mpu_wrappers.h"/>
+
+      <file category="header" name="freertos/Source/include/portable.h"/>
+
+      <file category="header" name="freertos/Source/include/projdefs.h"/>
+
+      <file category="header" name="freertos/Source/include/queue.h"/>
+
+      <file category="header" name="freertos/Source/include/semphr.h"/>
+
+      <file category="other" name="freertos/Source/include/stdint.readme"/>
+
+      <file category="header" name="freertos/Source/include/task.h"/>
+
+      <file category="header" name="freertos/Source/include/timers.h"/>
+
+      <file category="doc" name="freertos/Source/portable/readme.txt"/>
+
+      <file category="sourceC" name="freertos/Source/croutine.c"/>
+
+      <file category="sourceC" name="freertos/Source/event_groups.c"/>
+
+      <file category="sourceC" name="freertos/Source/list.c"/>
+
+      <file category="sourceC" name="freertos/Source/queue.c"/>
+
+      <file category="doc" name="freertos/Source/readme.txt"/>
+
+      <file category="sourceC" name="freertos/Source/tasks.c"/>
+
+      <file category="sourceC" name="freertos/Source/timers.c"/>
+
+      <file category="doc" name="freertos/FreeRTOS_for_MCUXpresso_SDK_v2.0.txt"/>
+
+    </component>
+
+    <component Cbundle="MCUXpresso SDK Operating System" Cclass="Operating System" Cgroup="FreeRTOS Operating System" Csub="template_application.freertos" Cvendor="NXP" Cversion="9.0.0">
+
+      <package name="Middleware" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="10.0.0"/>
+
+      <file category="sourceC" name="freertos/Source/portable/MemMang/heap_4.c"/>
+
+      <file category="sourceC" name="freertos/Source/portable/MemMang/heap_1.c"/>
+
+      <file category="sourceC" name="freertos/Source/portable/MemMang/heap_2.c"/>
+
+      <file category="sourceC" name="freertos/Source/portable/MemMang/heap_3.c"/>
+
+      <file category="sourceC" name="freertos/Source/portable/MemMang/heap_5.c"/>
+
+    </component>
+
+  </components>
+
+  <apis>
+
+    <api Capiversion="2.2.0" Cclass="CMSIS Driver" Cgroup="USB Device" Cvendor="ARM" Cversion="2.2.0" exclusive="0">
+
+      <package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.6.0"/>
+
+      <file category="doc" name="CMSIS/Documentation/Driver/html/group__usbd__interface__gr.html"/>
+
+      <file category="header" name="CMSIS/Driver/Include/Driver_USBD.h"/>
+
+    </api>
+
+    <api Capiversion="2.2.0" Cclass="CMSIS Driver" Cgroup="USB Host" Cvendor="ARM" Cversion="2.2.0" exclusive="0">
+
+      <package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.6.0"/>
+
+      <file category="doc" name="CMSIS/Documentation/Driver/html/group__usbh__interface__gr.html"/>
+
+      <file category="header" name="CMSIS/Driver/Include/Driver_USBH.h"/>
+
+    </api>
+
+  </apis>
+
+  <packages useAllLatestPacks="1"/>
+
+</configuration>
+

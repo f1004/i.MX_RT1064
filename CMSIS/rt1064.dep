@@ -1,0 +1,2024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>2191476123</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\board\clock_config.h</file>
+            <file>$PROJ_DIR$\..\board\peripherals.h</file>
+            <file>$PROJ_DIR$\..\board\pin_mux.c</file>
+            <file>$PROJ_DIR$\..\board\pin_mux.h</file>
+            <file>$PROJ_DIR$\..\User\delay.cc</file>
+            <file>$PROJ_DIR$\..\board\clock_config.c</file>
+            <file>$PROJ_DIR$\..\board\peripherals.c</file>
+            <file>$PROJ_DIR$\..\User\delay.h</file>
+            <file>$PROJ_DIR$\..\User\main.cpp</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_adc.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_adc_etc.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_spi_edma.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_gpio.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_clock.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpi2c.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\fsl_video_common.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\device\sccb\fsl_sccb.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\croutine.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_spi.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_pwm.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_csi.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\lists\generic_list.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\event_groups.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\list.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\queue.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\timers.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexspi.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\tasks.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_pit.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpi2c_edma.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_dmamux.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\portable\MemMang\heap_1.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\device\ov7725\fsl_ov7725.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_edma.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\i2c\fsl_video_i2c.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_common.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_i2c_master.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_adc_etc.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_spi.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpspi.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin_mux.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpuart.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\lpuart_adapter.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\utilities\str\fsl_str.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_gpio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_i2c_master.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_4.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_spi_edma.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_common.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_uart.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_csi_camera_adapter.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\StackMacros.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_uart_edma.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\led.pbi</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\Driver\Include\Driver_SPI.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\croutine.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\uart\lpuart_adapter.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpuart_edma.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\tasks.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_pwm.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_MIMXRT1064.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\oled.pbi</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\device\mt9m114\fsl_mt9m114.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\projdefs.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_uart_edma.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\utilities\debug_console\fsl_debug_console.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_4.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_video_i2c.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_clock.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\utilities\str\fsl_str.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_csi.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\FreeRTOS.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\system_MIMXRT1064.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_edma.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\queue.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_common.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\receiver\fsl_camera_receiver.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_uart.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm7.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpspi_edma.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_dmamux.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\clock_config.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\cmsis_drivers\fsl_lpuart_cmsis.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpspi.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpuart_edma.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\serial_manager\serial_port_internal.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\rtx_lib.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\rtx_lib.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_uart_edma.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\led.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\queue.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_adc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_edma.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_str.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_dmamux.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_adc.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\lists\generic_list.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexspi.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpspi.pbi</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_float_setup.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_uart_edma.pbi</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\fsl_video_common.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\serial_manager.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_csi.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\utilities\debug_console\fsl_debug_console.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\cmsis_drivers\fsl_lpi2c_cmsis.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpi2c_edma.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_MIMXRT1064.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\i2c\fsl_video_i2c.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\device\sccb\fsl_sccb.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\device\ov7725\fsl_ov7725.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\MIMXRT1064_features.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_mt9m114.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpi2c_edma.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_MIMXRT1064.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_assert.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\timers.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_3.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_assert.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\iar_intrinsics_common.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\Driver\Include\Driver_Common.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\oled.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpspi_cmsis.pbi</file>
+            <file>$PROJ_DIR$\RTE\CMSIS\RTX_Config.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\clock_config.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexspi.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\..\User\main.cc</file>
+            <file>$PROJ_DIR$\Debug\Obj\led.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\lib\dlpp7M_tl_nc.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_3.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\serial_manager\serial_manager.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\deprecated_definitions.h</file>
+            <file>$PROJ_DIR$\RTE\CMSIS\RTX_Config.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_pit.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\receiver\csi\fsl_csi_camera_adapter.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\timers.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\utilities\fsl_assert.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\cmsis_drivers\fsl_lpspi_cmsis.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_clock.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\list.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_spi.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpi2c_cmsis.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpuart.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_video_i2c.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_assert.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_ov7725.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include1\cmsis_os.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\Driver\Include\Driver_I2C.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_adc_etc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpi2c_cmsis.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpspi_edma.pbi</file>
+            <file>$PROJ_DIR$\Debug\List\rt1064.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\lpuart_adapter.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_clock.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_debug_console.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\uart\uart.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_1.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpuart_edma.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_gpio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_debug_console.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpuart.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_csi.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_adc.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin_mux.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_adc_etc.pbi</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\portmacro.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\croutine.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_video_common.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_ov7725.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_uart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_spi.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_spi_edma.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\peripherals.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpspi_cmsis.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\clock_config.pbi</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_iomuxc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\serial_port_uart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_i2c_master.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_uart.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin_mux.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\receiver\csi\fsl_csi_camera_adapter.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\cmsis_drivers\fsl_lpi2c_cmsis.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\RTX_Config.pbi</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_adc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\cmsis_os1.pbi</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpspi.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_1.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\peripherals.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\generic_list.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\list.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RTX_Config.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpuart_edma.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\event_groups.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\list.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\device\fsl_camera_device.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\lpuart_adapter.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_common.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\device\mt9m114\fsl_mt9m114.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\MIMXRT1064.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_MIMXRT1064.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_pwm.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\queue.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_str.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\cmsis_os1.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\croutine.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_pit.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_edma.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_gpio.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_adc_etc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpspi_cmsis.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\fsl_camera.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\timers.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\serial_manager.o</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpi2c.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_dmamux.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\tasks.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_csi.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\list.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\timers.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_2.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_ov7725.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexspi.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_clock.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\generic_list.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_common.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_spi.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_video_common.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_spi_edma.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_1.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_gpio.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_4.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_5.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_i2c_master.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_3.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\event_groups.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpi2c_edma.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\croutine.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_pwm.pbi</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\serial_manager\serial_port_uart.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_video_i2c.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\queue.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_sccb.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_edma.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\generic_list.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_video_common.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\oled.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpspi_edma.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\serial_manager\serial_manager.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpspi_edma.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\event_groups.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpuart.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_str.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\tasks.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\FreeRTOSConfig.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_2.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpuart_cmsis.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_5.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_dmamux.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_5.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\cmsis_drivers\fsl_lpspi_cmsis.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpi2c.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_pit.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpi2c.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\serial_port_uart.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\rt1064.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\rtx_lib.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\mpu_wrappers.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexspi.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_debug_console.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\serial_port_uart.pbi</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\serial_manager\serial_port_uart.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\heap_2.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpuart_cmsis.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_pit.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_pwm.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_mt9m114.pbi</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\portable.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_csi_camera_adapter.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpi2c_edma.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Library\cmsis_os1.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_sccb.__cstat.et</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\utilities\debug_console\fsl_debug_console_conf.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\cmsis_drivers\fsl_lpuart_cmsis.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\include\task.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_sccb.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\event_groups.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\peripherals.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpuart_edma.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\serial_manager.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpspi_edma.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\RTX_Config.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpi2c_cmsis.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpi2c.o</file>
+            <file>$PROJ_DIR$\Debug\Exe\rt1064.out</file>
+            <file>$PROJ_DIR$\RTE\Device\MIMXRT1064DVL6A\MIMXRT1064.h</file>
+            <file>$PROJ_DIR$\RTE\Device\MIMXRT1064DVL6A\system_MIMXRT1064.c</file>
+            <file>$PROJ_DIR$\..\devices\oled.h</file>
+            <file>$PROJ_DIR$\..\devices\oledfont.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\Driver\Include\Driver_USART.h</file>
+            <file>$PROJ_DIR$\RTE\RTE_Components.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\portable\MemMang\heap_3.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\portable\MemMang\heap_5.c</file>
+            <file>$PROJ_DIR$\..\devices\oled.cc</file>
+            <file>$PROJ_DIR$\RTE\Device\MIMXRT1064DVL6A\MIMXRT1064_features.h</file>
+            <file>$PROJ_DIR$\..\devices\led.h</file>
+            <file>$PROJ_DIR$\RTE\Device\MIMXRT1064DVL6A\startup_MIMXRT1064.s</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_lpspi.o</file>
+            <file>$PROJ_DIR$\RTE\Device\MIMXRT1064DVL6A\system_MIMXRT1064.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_flexio_spi_edma.o</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\DSP\Lib\IAR\iar_cortexM7lf_math.a</file>
+            <file>$PROJ_DIR$\..\devices\led.cc</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_i2c_master.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpuart.h</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\portable\MemMang\heap_2.c</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\portable\MemMang\heap_4.c</file>
+            <file>$PROJ_DIR$\RTE\Device\MIMXRT1064DVL6A\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\RTE\Device\MIMXRT1064DVL6A\RTE_Device.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\iar\MIMXRT1064xxxxx_ram.icf</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Lib\IAR\iar_cortexM7l_math.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\fsl_csi_camera_adapter.__cstat.et</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 333 175</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\pin_mux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 43</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 189</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 206</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 201 3</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 303 151 85 177 227 80 76 3 84 351 167 40 322 201 315 170 87 99 159 70 223 41 150 125 89 327 156</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\User\delay.cc</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 157</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 203</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 165</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 7 170 303 351 151 70 223 80 115 85 315 84 55 167 41 87 150 99 177 227 89 76 327 156 322 40 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 76 99 80 70 227 170 159 303 85 351 223 315 87 167 40 322 115 151 84 55 177 41 150 125 89 327 156 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\clock_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 92</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 200</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 139</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 201</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 351 40 322 303 85 84 167 55 177 151 227 80 76 201 315 170 87 99 159 70 223 41 150 125 89 327 156 0</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\peripherals.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 325</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 198</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 215</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 352 112</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 327 70 170 112 85 159 167 150 89 156 99 351 315 87 303 223 41 125 352 84 55 177 151 227 80 76 40 322 1</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\User\main.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 78</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 288</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 141</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 1 352 112 3 115 344 183 201 336</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 99 351 85 344 170 159 112 201 183 3 315 87 227 80 327 40 115 1 336 84 55 177 151 70 223 167 41 150 125 89 76 156 0 322 352</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 188</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 108</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 210 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 85 55 151 177 227 80 76 84 351 167 40 322 315 170 87 99 159 70 223 41 150 125 89 327 156 210</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_adc_etc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 172</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 190</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 38</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 237 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 85 303 151 177 227 80 76 84 351 167 40 322 315 170 87 99 159 70 223 41 150 125 89 327 156 237</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_spi_edma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 348</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 261</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 197</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 51 39 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 112 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 80 76 85 55 227 170 39 177 151 303 112 84 351 167 40 105 315 87 99 159 70 223 41 150 125 89 327 156 51 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 263</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 236</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 183 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 40 351 322 303 170 84 167 55 177 151 227 80 76 85 315 87 99 159 70 223 41 150 125 89 327 156 183</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_clock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 74</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 255</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 178</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 159 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 167 159 150 170 89 70 327 99 351 315 87 303 223 41 125 322 85 84 55 177 151 227 80 76 40 156</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 104</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 256</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 213</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 112 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 351 40 322 170 84 167 85 55 177 151 227 80 76 315 87 99 159 70 223 41 150 125 89 327 156 112</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpi2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 332</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 297</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 246</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 295 99 303 351 151 70 223 167 177 227 89 170 76 327 156 322 40 80 125 85 315 84 55 41 87 150 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 76 167 170 125 150 99 351 303 55 85 151 89 84 87 177 70 223 227 80 40 156 41 295 327 322 315 159</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\fsl_video_common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 260</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 278</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 115 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 223 87 125 351 303 41 315 170 99 159 70 167 150 89 327 156 85 84 55 177 151 227 80 76 40 322 115</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\device\sccb\fsl_sccb.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 323</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 275</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 318</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 123</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 167 159 150 170 89 156 70 327 85 99 351 315 87 303 223 41 125 123 84 55 177 151 227 80 76 40 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\croutine.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 192</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 270</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 60</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 79 99 303 351 151 70 223 167 170 287 68 313 147 191 241 322 133 301 321 160 233</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 170 303 68 167 151 351 301 322 160 321 99 287 313 70 223 191 241 79 233 147 133</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_spi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 161</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 259</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 196</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 112</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 41 85 87 223 125 315 351 170 99 159 70 167 150 89 327 112 84 55 177 151 227 80 76 40 322 39 156</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_pwm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 311</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 271</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 64</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 229 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 167 99 351 170 159 70 150 89 327 156 315 87 303 223 41 125 85 84 55 177 151 227 80 76 40 322 229</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_csi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 249</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 77</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 187 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 351 167 84 303 40 322 85 55 177 151 227 80 76 315 170 87 99 159 70 223 41 150 125 89 327 156 187</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\lists\generic_list.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 216</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 257</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 277</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 109</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 170 159 150 167 89 156 70 327 85 99 351 315 87 303 223 41 125 109 84 55 177 151 227 80 76 40 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\event_groups.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 324</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 268</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 283</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87 303 351 151 70 223 167 150 79 99 170 287 68 313 147 191 241 322 133 301 321 160 154 220</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 68 303 191 154 351 133 79 167 151 170 301 321 220 150 70 223 99 287 313 147 241 322 160 87</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\list.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 217</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 250</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 221</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87 303 351 151 70 223 167 150 79 99 170 287 68 313 147 191 241 322 133 301 160</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 99 133 303 160 167 151 313 147 79 351 150 70 223 287 87 170 68 191 301 241 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\queue.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 83</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 274</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 102</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87 303 351 151 70 223 167 150 55 41 79 99 170 287 68 313 147 191 241 322 133 301 321 160 230</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 191 241 321 41 170 167 151 351 68 301 322 55 79 230 150 70 223 99 287 313 147 133 87 160</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\timers.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 130</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 251</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 240</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87 303 351 151 70 223 167 150 79 99 170 287 68 313 147 191 241 322 133 301 321 160 230 154</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 68 303 191 230 351 133 79 167 151 170 301 160 321 154 150 70 223 99 287 313 147 241 322 87</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexspi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 254</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 140</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 304 99 303 351 151 70 223 167 177 227 89 170 76 327 156 322 40 80 125 85 315 84 55 41 87 150 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 170 70 150 99 40 303 351 85 223 227 80 76 84 167 177 151 125 89 327 156 55 41 304 322 315 87 159</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\tasks.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 286</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 248</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 63</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87 303 351 151 70 223 167 150 55 41 79 99 170 287 68 313 147 191 241 322 133 301 321 160 154 56</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 167 147 351 321 151 68 56 303 41 170 133 55 79 154 150 70 223 99 287 313 87 191 301 241 322 160</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_pit.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 234</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 296</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 152</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 310 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 170 303 87 351 315 223 41 125 99 159 70 167 150 89 327 156 85 84 55 177 151 227 80 76 40 322 310</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpi2c_edma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 120</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 269</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 127</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 316 295 99 303 351 151 70 223 167 177 227 89 170 76 327 156 322 40 80 125 85 315 84 55 41 87 150 159 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 89 303 170 99 85 327 151 167 55 105 351 125 322 159 87 295 177 70 223 227 80 76 40 156 315 316 84 41 150</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_dmamux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 247</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 107</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 292 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 167 351 84 303 40 322 85 55 177 151 227 80 76 315 170 87 99 159 70 223 41 150 125 89 327 156 292</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\portable\MemMang\heap_1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 214</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 262</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 181</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\device\ov7725\fsl_ov7725.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 194</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 253</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 168</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 115 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 239 222 124 123</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 351 85 322 40 303 84 167 222 55 177 151 227 80 76 239 124 315 170 87 99 159 70 223 41 150 125 89 327 156 115 123</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_edma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 235</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 276</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 81</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 105 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 99 351 85 167 170 159 70 150 89 315 87 303 223 41 125 84 55 177 151 227 80 327 156 105 76 40 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\i2c\fsl_video_i2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 73</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 273</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 164</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 122</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 177 151 55 227 80 76 84 351 167 40 322 122 315 170 87 99 159 70 223 41 150 125 89 327 156 85</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 225</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 258</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 55 151 177 227 80 76 84 351 167 40 322 85 315 170 87 99 159 70 223 41 150 125 89 327 156</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_i2c_master.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 49</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 266</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 204</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 352 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 112</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 85 70 327 170 159 167 150 89 99 351 315 87 303 223 41 125 112 84 55 177 151 227 80 76 40 322 352 156</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpspi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 346</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 111</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 94</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 212 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 70 170 159 167 150 89 99 351 76 315 87 303 223 41 125 85 84 55 177 151 227 80 327 156 212 40 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 300</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 98</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 97</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 327 170 303 351 151 70 223 156 322 148 339 149 99 167 185 138</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 156 322 185 351 149 170 151 148 138 70 223 167 327 339 99</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpuart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 186</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 284</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 163</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 353 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 177 151 303 170 55 227 80 76 84 351 167 327 85 315 87 99 159 70 223 41 150 125 89 156 353 40 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\uart\lpuart_adapter.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 224</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 176</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 353 180</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 177 151 351 303 85 55 227 80 76 170 180 84 167 327 156 353 315 87 99 159 70 223 41 150 125 89 40 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\device\mt9m114\fsl_mt9m114.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 126</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 312</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 115 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 239 222 226 122</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 170 70 122 159 167 150 89 239 99 351 222 315 87 303 223 41 125 40 322 115 226 85 84 55 177 151 227 80 76 327 156</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_uart_edma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 57</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 114</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 100 205 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 112 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 303 85 112 315 351 40 322 170 87 223 41 125 99 159 70 167 150 89 205 84 55 177 151 227 80 76 327 156 100</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\utilities\debug_console\fsl_debug_console.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 184</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 305</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 179</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87 303 351 151 70 223 167 150 319 47 85 315 84 170 55 41 99 177 227 89 76 327 156 322 40 80 125 159 281 272 118</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 99 351 303 85 70 167 170 159 41 227 80 76 319 118 223 315 87 327 156 47 281 151 150 84 55 177 125 89 40 322 272 82</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\utilities\str\fsl_str.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 231</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 106</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 285</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 302 303 351 151 70 223 113 87 167 150 47 85 315 84 170 55 41 99 177 227 89 76 327 156 322 40 80 125 159 319</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 150 177 125 319 70 85 55 351 87 223 84 167 89 170 156 82 47 113 151 315 99 159 41 227 80 76 327 302 40 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_flexio_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 195</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 53</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 205 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 112</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 351 99 167 170 159 70 150 89 112 315 87 303 223 41 125 85 84 55 177 151 227 80 76 327 40 322 205 156</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpspi_edma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 329</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 174</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 282</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 280 212 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 223 87 125 85 303 41 105 315 351 170 99 159 70 167 150 89 40 322 212 84 55 177 151 227 80 280 76 327 156</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\cmsis_drivers\fsl_lpuart_cmsis.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 309</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 290</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 320 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 338 134 357 353 292 326 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 85 315 351 338 326 87 223 41 125 84 353 170 99 159 70 167 150 89 156 357 292 55 177 151 227 80 76 327 105 320 40 322 134</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\drivers\fsl_lpuart_edma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 219</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 62</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 182</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 326 353 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55 227 85 80 76 170 177 151 303 351 353 84 167 327 156 105 315 87 99 159 70 223 41 150 125 89 40 322 326</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\RTE\CMSIS\RTX_Config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 218</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 209</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 330</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 327 170 303 351 151 70 223 156 322 149 99 167 185</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 351 223 70 185 303 149 170 156 151 322 167 327 99</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\User\main.cc</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 288</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 1 352 112 3 115 344 183 201 336</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 159 150 170 167 89 85 70 344 99 351 3 352 315 87 303 223 41 125 40 1 115 336 84 55 177 151 227 80 76 327 322 112 0 156 183 201</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\serial_manager\serial_manager.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 244</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 328</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 116</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 281 272 96</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 315 41 223 125 87 351 40 322 281 170 99 159 70 167 150 89 272 55 96 84 177 151 227 80 76 327 156 85</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\video\camera\receiver\csi\fsl_csi_camera_adapter.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 314</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 54</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 361</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 239 115 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 86 187 207</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 167 99 351 170 159 70 150 89 327 156 187 115 315 87 303 223 41 125 86 207 85 84 55 177 151 227 80 76 40 322 239</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\utilities\fsl_assert.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 166</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 129</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 132</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 118 281 272</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 327 85 84 351 156 167 55 177 151 227 80 76 170 281 118 315 87 99 159 70 223 41 150 125 89 40 322 272</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\cmsis_drivers\fsl_lpspi_cmsis.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 238</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 136</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 199</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 294 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 357 59 134 212 280 105 292</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 223 85 87 125 303 41 315 351 134 59 280 170 99 159 70 167 150 89 156 357 212 292 84 55 177 151 227 80 76 327 294 40 322 105</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\cmsis_drivers\fsl_lpi2c_cmsis.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 173</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 162</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 331</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 119 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 171 134 357 295 292 316 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 303 327 85 351 156 84 167 170 357 292 55 177 151 227 80 76 171 295 316 315 87 99 159 70 223 41 150 125 89 40 322 134 105 119</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\MIMXRT1064_DFP\12.0.0\components\serial_manager\serial_port_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 202</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 306</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 298</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 281 272 96 180</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 351 84 167 303 327 156 85 96 272 55 177 151 227 80 76 170 281 180 315 87 99 159 70 223 41 150 125 89 40 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Library\cmsis_os1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 232</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 211</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 55 303 351 151 70 223 167 41 169 185 170 99 149</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 185 41 303 151 351 167 169 149 99 170 55 70 223</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\rt1064.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 175</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 359 92 192 157 324 103 172 74 225 117 314 91 235 104 49 161 348 110 48 332 120 194 234 311 323 193 73 216 214 308 145 50 291 349 101 217 78 279 325 43 83 121 228 286 130 360 245 242 144 358 243</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\RTE\Device\MIMXRT1064DVL6A\system_MIMXRT1064.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 228</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 65</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 128</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 170 303 351 151 70 223 356 334 89 76 327 156 322 40 347 343</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 223 303 70 334 347 40 322 356 351 151 343 89 76 170 327 156</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\portable\MemMang\heap_3.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 145</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 267</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 131</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\portable\MemMang\heap_5.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 291</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 265</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 293</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\devices\oled.cc</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 279</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 66</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 135</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 336 183 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 201 3 115 337 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 327 70 170 201 159 167 150 89 227 99 351 337 183 115 85 315 87 303 223 41 125 7 3 84 55 177 151 80 76 40 156 336 322</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\RTE\Device\MIMXRT1064DVL6A\startup_MIMXRT1064.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 121</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\devices\led.cc</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 101</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 143</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 344 183 85 315 303 351 151 70 223 84 170 55 167 41 87 150 99 177 227 89 76 327 156 322 40 80 125 159 201 3 115</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 76 227 80 55 85 177 151 303 3 84 351 167 40 322 183 201 115 315 170 87 99 159 70 223 41 150 125 89 327 156 344</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\portable\MemMang\heap_2.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 308</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 252</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 289</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\NXP\Middleware\10.0.0\freertos\Source\portable\MemMang\heap_4.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 264</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 72</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\User\main.cc</name>
+            <tool>C-STAT</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\User\main.cc</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>C:\Users\Plect\IAR-CMSIS-Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Library\cmsis_os1.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>

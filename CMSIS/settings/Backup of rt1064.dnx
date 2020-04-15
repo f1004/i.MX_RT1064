@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<settings>
+    <Aliases>
+        <Count>0</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
+    <PlDriver>
+        <MemConfigValue />
+    </PlDriver>
+    <Jet>
+        <DisableInterrupts>0</DisableInterrupts>
+        <LeaveRunning>0</LeaveRunning>
+        <MultiCoreRunAll>0</MultiCoreRunAll>
+    </Jet>
+    <ArmDriver>
+        <EnableCache>1</EnableCache>
+    </ArmDriver>
+</settings>

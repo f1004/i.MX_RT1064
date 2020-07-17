@@ -2,17 +2,31 @@
 
 "--cpu=Cortex-M7" 
 
-"--fpu=None" 
+"--fpu=VFPv5_D16" 
 
 "-p" 
 
 "C:/Users/Plect/IAR-CMSIS-Packs/NXP/MIMXRT1064_DFP/12.0.0/\.iar\config\debugger\MIMXRT1064xxxxA.ddf" 
 
+"--drv_verify_download" 
+
 "--semihosting" 
 
 "--device=MIMXRT1064xxxxA" 
 
-"--multicore_nr_of_cores=1" 
+"--drv_communication=USB0" 
+
+"--drv_interface_speed=auto" 
+
+"--jlink_initial_speed=1000" 
+
+"--jlink_reset_strategy=0,0" 
+
+"--drv_interface=SWD" 
+
+"--drv_catch_exceptions=0x000" 
+
+"--drv_swo_clock_setup=600000000,0,2000000" 
 
 
 

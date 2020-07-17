@@ -94,12 +94,160 @@ void L3G4200_init(void) {
 }
 
 /***********************************************************************************************************************
+ * QuadTimer_1 initialization code
+ **********************************************************************************************************************/
+/* clang-format off */
+/* TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
+instance:
+- name: 'QuadTimer_1'
+- type: 'qtmr'
+- mode: 'general'
+- type_id: 'qtmr_460dd7aa3f3371843c2548acd54252b0'
+- functional_group: 'BOARD_InitPeripherals'
+- peripheral: 'TMR1'
+- config_sets:
+  - fsl_qtmr:
+    - clockSource: 'BusInterfaceClock'
+    - clockSourceFreq: 'BOARD_BootClockRUN'
+    - qtmr_channels:
+      - 0:
+        - channel_prefix_id: 'Channel_0'
+        - channel: 'kQTMR_Channel_0'
+        - primarySource: 'kQTMR_ClockCounter0InputPin'
+        - primarySourceFreq: '0'
+        - secondarySource: 'kQTMR_Counter1InputPin'
+        - countingMode: 'kQTMR_PriSrcRiseEdgeSecDir'
+        - enableMasterMode: 'false'
+        - enableExternalForce: 'false'
+        - faultFilterCount: '3'
+        - faultFilterPeriod: '0'
+        - debugMode: 'kQTMR_RunNormalInDebug'
+        - timerModeInit: 'inputCapture'
+        - inputCaptureMode:
+          - inputPolarity: 'false'
+          - reloadOnCapture: 'false'
+          - captureMode: 'kQTMR_NoCapture'
+        - dmaIntMode: 'polling'
+      - 1:
+        - channel_prefix_id: 'Channel_1'
+        - channel: 'kQTMR_Channel_1'
+        - primarySource: 'kQTMR_ClockCounter2Output'
+        - primarySourceFreq: '0'
+        - secondarySource: 'kQTMR_Counter3InputPin'
+        - countingMode: 'kQTMR_PriSrcRiseEdgeSecDir'
+        - enableMasterMode: 'false'
+        - enableExternalForce: 'false'
+        - faultFilterCount: '3'
+        - faultFilterPeriod: '0'
+        - debugMode: 'kQTMR_RunNormalInDebug'
+        - timerModeInit: 'inputCapture'
+        - inputCaptureMode:
+          - inputPolarity: 'false'
+          - reloadOnCapture: 'false'
+          - captureMode: 'kQTMR_NoCapture'
+        - dmaIntMode: 'polling'
+    - interruptVector:
+      - enable_irq: 'false'
+      - interrupt:
+        - IRQn: 'TMR1_IRQn'
+        - enable_priority: 'false'
+        - priority: '0'
+        - enable_custom_name: 'false'
+ * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
+/* clang-format on */
+const qtmr_config_t QuadTimer_1_Channel_0_config = {
+  .primarySource = kQTMR_ClockCounter0InputPin,
+  .secondarySource = kQTMR_Counter1InputPin,
+  .enableMasterMode = false,
+  .enableExternalForce = false,
+  .faultFilterCount = 0,
+  .faultFilterPeriod = 0,
+  .debugMode = kQTMR_RunNormalInDebug
+};
+const qtmr_config_t QuadTimer_1_Channel_1_config = {
+  .primarySource = kQTMR_ClockCounter2Output,
+  .secondarySource = kQTMR_Counter3InputPin,
+  .enableMasterMode = false,
+  .enableExternalForce = false,
+  .faultFilterCount = 0,
+  .faultFilterPeriod = 0,
+  .debugMode = kQTMR_RunNormalInDebug
+};
+
+void QuadTimer_1_init(void) {
+  /* Quad timer channel Channel_0 peripheral initialization */
+  QTMR_Init(QUADTIMER_1_PERIPHERAL, QUADTIMER_1_CHANNEL_0_CHANNEL, &QuadTimer_1_Channel_0_config);
+  /* Setup the Input capture mode of the timer channel */
+  QTMR_SetupInputCapture(QUADTIMER_1_PERIPHERAL, QUADTIMER_1_CHANNEL_0_CHANNEL, kQTMR_Counter1InputPin, false, false, kQTMR_NoCapture);
+  /* Quad timer channel Channel_1 peripheral initialization */
+  QTMR_Init(QUADTIMER_1_PERIPHERAL, QUADTIMER_1_CHANNEL_1_CHANNEL, &QuadTimer_1_Channel_1_config);
+  /* Setup the Input capture mode of the timer channel */
+  QTMR_SetupInputCapture(QUADTIMER_1_PERIPHERAL, QUADTIMER_1_CHANNEL_1_CHANNEL, kQTMR_Counter3InputPin, false, false, kQTMR_NoCapture);
+  /* Start the timer - select the timer counting mode */
+  QTMR_StartTimer(QUADTIMER_1_PERIPHERAL, QUADTIMER_1_CHANNEL_0_CHANNEL, kQTMR_PriSrcRiseEdgeSecDir);
+  /* Start the timer - select the timer counting mode */
+  QTMR_StartTimer(QUADTIMER_1_PERIPHERAL, QUADTIMER_1_CHANNEL_1_CHANNEL, kQTMR_PriSrcRiseEdgeSecDir);
+}
+
+/***********************************************************************************************************************
+ * PIT_1 initialization code
+ **********************************************************************************************************************/
+/* clang-format off */
+/* TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
+instance:
+- name: 'PIT_1'
+- type: 'pit'
+- mode: 'LPTMR_GENERAL'
+- type_id: 'pit_a4782ba5223c8a2527ba91aeb2bc4159'
+- functional_group: 'BOARD_InitPeripherals'
+- peripheral: 'PIT'
+- config_sets:
+  - fsl_pit:
+    - enableRunInDebug: 'false'
+    - enableSharedInterrupt: 'true'
+    - sharedInterrupt:
+      - IRQn: 'PIT_IRQn'
+      - enable_priority: 'false'
+      - priority: '0'
+      - enable_custom_name: 'false'
+    - timingConfig:
+      - clockSource: 'BusInterfaceClock'
+      - clockSourceFreq: 'BOARD_BootClockRUN'
+    - channels:
+      - 0:
+        - channelNumber: '0'
+        - enableChain: 'false'
+        - timerPeriod: '5ms'
+        - startTimer: 'true'
+        - enableInterrupt: 'true'
+ * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
+/* clang-format on */
+const pit_config_t PIT_1_config = {
+  .enableRunInDebug = false
+};
+
+void PIT_1_init(void) {
+  /* Initialize the PIT. */
+  PIT_Init(PIT_1_PERIPHERAL, &PIT_1_config);
+  /* Set channel 0 period to 5 ms (15000 ticks). */
+  PIT_SetTimerPeriod(PIT_1_PERIPHERAL, kPIT_Chnl_0, PIT_1_0_TICKS);
+  /* Enable interrupts from channel 0. */
+  PIT_EnableInterrupts(PIT_1_PERIPHERAL, kPIT_Chnl_0, kPIT_TimerInterruptEnable);
+  /* Enable interrupt PIT_1_IRQN request in the NVIC */
+  EnableIRQ(PIT_1_IRQN);
+  /* Start channel 0. */
+  PIT_StartTimer(PIT_1_PERIPHERAL, kPIT_Chnl_0);
+}
+
+/***********************************************************************************************************************
  * Initialization functions
  **********************************************************************************************************************/
 void BOARD_InitPeripherals(void)
 {
   /* Initialize components */
   L3G4200_init();
+  QuadTimer_1_init();
+  PIT_1_init();
 }
 
 /***********************************************************************************************************************

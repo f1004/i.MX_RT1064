@@ -22,17 +22,27 @@ pin_labels:
 - {pin_num: B12, pin_signal: GPIO_B1_07, label: led_green, identifier: led_green}
 - {pin_num: C7, pin_signal: GPIO_EMC_41, label: led_blue, identifier: led_blue}
 - {pin_num: B8, pin_signal: GPIO_B0_05, label: oled_dc, identifier: oled_res;oled_dc}
-- {pin_num: B9, pin_signal: GPIO_B0_08, label: oled_res, identifier: oled_res}
+- {pin_num: B9, pin_signal: GPIO_B0_08, label: led, identifier: oled_res;led}
 - {pin_num: B7, pin_signal: GPIO_EMC_39, label: oled_cs, identifier: oled_cs}
 - {pin_num: B6, pin_signal: GPIO_EMC_14, label: oled_dc, identifier: oled_dc}
 - {pin_num: A4, pin_signal: GPIO_EMC_17, label: oled_res, identifier: oled_res}
 - {pin_num: A3, pin_signal: GPIO_EMC_20, label: oled_d1, identifier: oled_d1}
 - {pin_num: A2, pin_signal: GPIO_EMC_27, label: oled_d0, identifier: oled_d0}
+- {pin_num: F14, pin_signal: GPIO_AD_B0_09, label: led, identifier: test;led}
+- {pin_num: G11, pin_signal: GPIO_AD_B0_03, label: pit_0, identifier: pit_0}
+- {pin_num: D7, pin_signal: GPIO_B0_00, label: qtmr1_c0, identifier: qtmr1_c0}
+- {pin_num: E7, pin_signal: GPIO_B0_01, label: qtmr1_c1, identifier: qtmr1_c1}
+- {pin_num: E8, pin_signal: GPIO_B0_02, label: qtmr1_c2, identifier: qtmr1_c2}
+- {pin_num: A12, pin_signal: GPIO_B1_08, label: qtmr1_c3, identifier: qtmr1_c3}
+- {pin_num: A13, pin_signal: GPIO_B1_09, label: oled_d0, identifier: oled_d0}
+- {pin_num: B13, pin_signal: GPIO_B1_10, label: oled_d1, identifier: oled_d1}
+- {pin_num: C13, pin_signal: GPIO_B1_11, label: oled_res}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 
 #include "fsl_common.h"
 #include "fsl_iomuxc.h"
+#include "fsl_gpio.h"
 #include "pin_mux.h"
 
 /* FUNCTION ************************************************************************************************************
@@ -51,14 +61,12 @@ BOARD_InitPins:
 - pin_list:
   - {pin_num: F3, peripheral: FLEXIO1, signal: 'IO, 01', pin_signal: GPIO_EMC_01, identifier: flexio_i2c_SDA}
   - {pin_num: F4, peripheral: FLEXIO1, signal: 'IO, 02', pin_signal: GPIO_EMC_02}
-  - {pin_num: A7, peripheral: GPIO3, signal: 'gpio_io, 26', pin_signal: GPIO_EMC_40, speed: MHZ_100}
-  - {pin_num: B12, peripheral: GPIO2, signal: 'gpio_io, 23', pin_signal: GPIO_B1_07}
-  - {pin_num: C7, peripheral: GPIO3, signal: 'gpio_io, 27', pin_signal: GPIO_EMC_41}
-  - {pin_num: A2, peripheral: GPIO4, signal: 'gpio_io, 27', pin_signal: GPIO_EMC_27, pull_keeper_select: Keeper}
-  - {pin_num: A3, peripheral: GPIO4, signal: 'gpio_io, 20', pin_signal: GPIO_EMC_20}
-  - {pin_num: A4, peripheral: GPIO4, signal: 'gpio_io, 17', pin_signal: GPIO_EMC_17}
-  - {pin_num: B6, peripheral: GPIO4, signal: 'gpio_io, 14', pin_signal: GPIO_EMC_14}
-  - {pin_num: B7, peripheral: GPIO3, signal: 'gpio_io, 25', pin_signal: GPIO_EMC_39}
+  - {pin_num: F14, peripheral: GPIO1, signal: 'gpio_io, 09', pin_signal: GPIO_AD_B0_09, identifier: led, direction: OUTPUT, gpio_init_state: 'false', pull_up_down_config: Pull_Up_100K_Ohm,
+    pull_keeper_select: Keeper, drive_strength: R0_6}
+  - {pin_num: D7, peripheral: TMR1, signal: 'TIMER, 0', pin_signal: GPIO_B0_00}
+  - {pin_num: E7, peripheral: TMR1, signal: 'TIMER, 1', pin_signal: GPIO_B0_01}
+  - {pin_num: E8, peripheral: TMR1, signal: 'TIMER, 2', pin_signal: GPIO_B0_02}
+  - {pin_num: A12, peripheral: TMR1, signal: 'TIMER, 3', pin_signal: GPIO_B1_08}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 
@@ -71,8 +79,29 @@ BOARD_InitPins:
 void BOARD_InitPins(void) {
   CLOCK_EnableClock(kCLOCK_Iomuxc);           /* iomuxc clock (iomuxc_clk_enable): 0x03U */
 
+  /* GPIO configuration of led on GPIO_AD_B0_09 (pin F14) */
+  gpio_pin_config_t led_config = {
+      .direction = kGPIO_DigitalOutput,
+      .outputLogic = 0U,
+      .interruptMode = kGPIO_NoIntmode
+  };
+  /* Initialize GPIO functionality on GPIO_AD_B0_09 (pin F14) */
+  GPIO_PinInit(GPIO1, 9U, &led_config);
+
   IOMUXC_SetPinMux(
-      IOMUXC_GPIO_B1_07_GPIO2_IO23,           /* GPIO_B1_07 is configured as GPIO2_IO23 */
+      IOMUXC_GPIO_AD_B0_09_GPIO1_IO09,        /* GPIO_AD_B0_09 is configured as GPIO1_IO09 */
+      0U);                                    /* Software Input On Field: Input Path is determined by functionality */
+  IOMUXC_SetPinMux(
+      IOMUXC_GPIO_B0_00_QTIMER1_TIMER0,       /* GPIO_B0_00 is configured as QTIMER1_TIMER0 */
+      0U);                                    /* Software Input On Field: Input Path is determined by functionality */
+  IOMUXC_SetPinMux(
+      IOMUXC_GPIO_B0_01_QTIMER1_TIMER1,       /* GPIO_B0_01 is configured as QTIMER1_TIMER1 */
+      0U);                                    /* Software Input On Field: Input Path is determined by functionality */
+  IOMUXC_SetPinMux(
+      IOMUXC_GPIO_B0_02_QTIMER1_TIMER2,       /* GPIO_B0_02 is configured as QTIMER1_TIMER2 */
+      0U);                                    /* Software Input On Field: Input Path is determined by functionality */
+  IOMUXC_SetPinMux(
+      IOMUXC_GPIO_B1_08_QTIMER1_TIMER3,       /* GPIO_B1_08 is configured as QTIMER1_TIMER3 */
       0U);                                    /* Software Input On Field: Input Path is determined by functionality */
   IOMUXC_SetPinMux(
       IOMUXC_GPIO_EMC_01_FLEXIO1_FLEXIO01,    /* GPIO_EMC_01 is configured as FLEXIO1_FLEXIO01 */
@@ -80,58 +109,26 @@ void BOARD_InitPins(void) {
   IOMUXC_SetPinMux(
       IOMUXC_GPIO_EMC_02_FLEXIO1_FLEXIO02,    /* GPIO_EMC_02 is configured as FLEXIO1_FLEXIO02 */
       0U);                                    /* Software Input On Field: Input Path is determined by functionality */
-  IOMUXC_SetPinMux(
-      IOMUXC_GPIO_EMC_14_GPIO4_IO14,          /* GPIO_EMC_14 is configured as GPIO4_IO14 */
-      0U);                                    /* Software Input On Field: Input Path is determined by functionality */
-  IOMUXC_SetPinMux(
-      IOMUXC_GPIO_EMC_17_GPIO4_IO17,          /* GPIO_EMC_17 is configured as GPIO4_IO17 */
-      0U);                                    /* Software Input On Field: Input Path is determined by functionality */
-  IOMUXC_SetPinMux(
-      IOMUXC_GPIO_EMC_20_GPIO4_IO20,          /* GPIO_EMC_20 is configured as GPIO4_IO20 */
-      0U);                                    /* Software Input On Field: Input Path is determined by functionality */
-  IOMUXC_SetPinMux(
-      IOMUXC_GPIO_EMC_27_GPIO4_IO27,          /* GPIO_EMC_27 is configured as GPIO4_IO27 */
-      0U);                                    /* Software Input On Field: Input Path is determined by functionality */
-  IOMUXC_SetPinMux(
-      IOMUXC_GPIO_EMC_39_GPIO3_IO25,          /* GPIO_EMC_39 is configured as GPIO3_IO25 */
-      0U);                                    /* Software Input On Field: Input Path is determined by functionality */
-  IOMUXC_SetPinMux(
-      IOMUXC_GPIO_EMC_40_GPIO3_IO26,          /* GPIO_EMC_40 is configured as GPIO3_IO26 */
-      0U);                                    /* Software Input On Field: Input Path is determined by functionality */
-  IOMUXC_SetPinMux(
-      IOMUXC_GPIO_EMC_41_GPIO3_IO27,          /* GPIO_EMC_41 is configured as GPIO3_IO27 */
-      0U);                                    /* Software Input On Field: Input Path is determined by functionality */
-  IOMUXC_GPR->GPR27 = ((IOMUXC_GPR->GPR27 &
-    (~(IOMUXC_GPR_GPR27_GPIO_MUX2_GPIO_SEL_MASK))) /* Mask bits to zero which are setting */
-      | IOMUXC_GPR_GPR27_GPIO_MUX2_GPIO_SEL(0x00U) /* GPIO2 and GPIO7 share same IO MUX function, GPIO_MUX2 selects one GPIO function: 0x00U */
+  IOMUXC_GPR->GPR26 = ((IOMUXC_GPR->GPR26 &
+    (~(IOMUXC_GPR_GPR26_GPIO_MUX1_GPIO_SEL_MASK))) /* Mask bits to zero which are setting */
+      | IOMUXC_GPR_GPR26_GPIO_MUX1_GPIO_SEL(0x00U) /* GPIO1 and GPIO6 share same IO MUX function, GPIO_MUX1 selects one GPIO function: 0x00U */
     );
-  IOMUXC_GPR->GPR28 = ((IOMUXC_GPR->GPR28 &
-    (~(IOMUXC_GPR_GPR28_GPIO_MUX3_GPIO_SEL_MASK))) /* Mask bits to zero which are setting */
-      | IOMUXC_GPR_GPR28_GPIO_MUX3_GPIO_SEL(0x00U) /* GPIO3 and GPIO8 share same IO MUX function, GPIO_MUX3 selects one GPIO function: 0x00U */
-    );
-  IOMUXC_GPR->GPR29 = ((IOMUXC_GPR->GPR29 &
-    (~(IOMUXC_GPR_GPR29_GPIO_MUX4_GPIO_SEL_MASK))) /* Mask bits to zero which are setting */
-      | IOMUXC_GPR_GPR29_GPIO_MUX4_GPIO_SEL(0x00U) /* GPIO4 and GPIO9 share same IO MUX function, GPIO_MUX4 selects one GPIO function: 0x00U */
+  IOMUXC_GPR->GPR6 = ((IOMUXC_GPR->GPR6 &
+    (~(IOMUXC_GPR_GPR6_QTIMER1_TRM0_INPUT_SEL_MASK | IOMUXC_GPR_GPR6_QTIMER1_TRM1_INPUT_SEL_MASK | IOMUXC_GPR_GPR6_QTIMER1_TRM2_INPUT_SEL_MASK | IOMUXC_GPR_GPR6_QTIMER1_TRM3_INPUT_SEL_MASK))) /* Mask bits to zero which are setting */
+      | IOMUXC_GPR_GPR6_QTIMER1_TRM0_INPUT_SEL(0x00U) /* QTIMER1 TMR0 input select: input from IOMUX */
+      | IOMUXC_GPR_GPR6_QTIMER1_TRM1_INPUT_SEL(0x00U) /* QTIMER1 TMR1 input select: input from IOMUX */
+      | IOMUXC_GPR_GPR6_QTIMER1_TRM2_INPUT_SEL(0x00U) /* QTIMER1 TMR2 input select: input from IOMUX */
+      | IOMUXC_GPR_GPR6_QTIMER1_TRM3_INPUT_SEL(0x00U) /* QTIMER1 TMR3 input select: input from IOMUX */
     );
   IOMUXC_SetPinConfig(
-      IOMUXC_GPIO_EMC_27_GPIO4_IO27,          /* GPIO_EMC_27 PAD functional properties : */
-      0x10B0U);                               /* Slew Rate Field: Slow Slew Rate
+      IOMUXC_GPIO_AD_B0_09_GPIO1_IO09,        /* GPIO_AD_B0_09 PAD functional properties : */
+      0x90B0U);                               /* Slew Rate Field: Slow Slew Rate
                                                  Drive Strength Field: R0/6
                                                  Speed Field: medium(100MHz)
                                                  Open Drain Enable Field: Open Drain Disabled
                                                  Pull / Keep Enable Field: Pull/Keeper Enabled
                                                  Pull / Keep Select Field: Keeper
-                                                 Pull Up / Down Config. Field: 100K Ohm Pull Down
-                                                 Hyst. Enable Field: Hysteresis Disabled */
-  IOMUXC_SetPinConfig(
-      IOMUXC_GPIO_EMC_40_GPIO3_IO26,          /* GPIO_EMC_40 PAD functional properties : */
-      0x10B0U);                               /* Slew Rate Field: Slow Slew Rate
-                                                 Drive Strength Field: R0/6
-                                                 Speed Field: medium(100MHz)
-                                                 Open Drain Enable Field: Open Drain Disabled
-                                                 Pull / Keep Enable Field: Pull/Keeper Enabled
-                                                 Pull / Keep Select Field: Keeper
-                                                 Pull Up / Down Config. Field: 100K Ohm Pull Down
+                                                 Pull Up / Down Config. Field: 100K Ohm Pull Up
                                                  Hyst. Enable Field: Hysteresis Disabled */
 }
 

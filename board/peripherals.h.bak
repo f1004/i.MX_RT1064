@@ -6,9 +6,59 @@
 #ifndef _PERIPHERALS_H_
 #define _PERIPHERALS_H_
 
+/***********************************************************************************************************************
+ * Included files
+ **********************************************************************************************************************/
+#include "fsl_common.h"
+#include "fsl_flexio_i2c_master.h"
+#include "fsl_qtmr.h"
+#include "fsl_clock.h"
+#include "fsl_pit.h"
+extern int count;
 #if defined(__cplusplus)
 extern "C" {
 #endif /* __cplusplus */
+
+/***********************************************************************************************************************
+ * Definitions
+ **********************************************************************************************************************/
+/* Definitions for BOARD_InitPeripherals functional group */
+/* Definition of peripheral ID */
+#define L3G4200_PERIPHERAL FLEXIO1
+/* Definition of the clock source frequency */
+#define L3G4200_CLK_FREQ 1500000UL
+/* Definition of peripheral ID */
+#define QUADTIMER_1_PERIPHERAL TMR1
+/* Definition of the timer channel Channel_0. */
+#define QUADTIMER_1_CHANNEL_0_CHANNEL kQTMR_Channel_0
+/* Definition of the timer channel Channel_1. */
+#define QUADTIMER_1_CHANNEL_1_CHANNEL kQTMR_Channel_1
+/* Definition of the timer channel Channel_0 clock source frequency. */
+#define QUADTIMER_1_CHANNEL_0_CLOCK_SOURCE 0UL
+/* Definition of the timer channel Channel_1 clock source frequency. */
+#define QUADTIMER_1_CHANNEL_1_CLOCK_SOURCE 0UL
+/* BOARD_InitPeripherals defines for PIT */
+/* Definition of peripheral ID. */
+#define PIT_1_PERIPHERAL PIT
+/* Definition of clock source frequency. */
+#define PIT_1_CLK_FREQ 3000000UL
+/* Definition of ticks count for channel 0. */
+#define PIT_1_0_TICKS 14999U
+/* PIT_1 interrupt vector ID (number). */
+#define PIT_1_IRQN PIT_IRQn
+/* PIT_1 interrupt handler identifier. */
+#define PIT_1_IRQHANDLER_ENCODE_CAPTURE PIT_IRQHandler
+
+/***********************************************************************************************************************
+ * Global variables
+ **********************************************************************************************************************/
+/* FlexIO peripheral configuration */
+extern FLEXIO_I2C_Type L3G4200_peripheralConfig;
+/* FlexIO I2C master configuration */
+extern flexio_i2c_master_config_t L3G4200_config;
+extern const qtmr_config_t QuadTimer_1_Channel_0_config;
+extern const qtmr_config_t QuadTimer_1_Channel_1_config;
+extern const pit_config_t PIT_1_config;
 
 /***********************************************************************************************************************
  * Initialization functions

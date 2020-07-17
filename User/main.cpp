@@ -2,11 +2,12 @@
 #include "peripherals.h"
 #include "pin_mux.h"
 #include "fsl_video_common.h"
-
+#include "delay.h"
 #include "led.h"
 #include "oled.h"
+#include "fsl_qtmr.h"
 
-#define test_num 0
+#define test_num 3
 
 #if test_num == 0
 //gpio test
@@ -15,13 +16,13 @@ int main()
     BOARD_InitBootClocks();
     BOARD_InitBootPins();
     BOARD_InitBootPeripherals();
-    LEDInit();
+    BOARD_InitPins();
+    
+//    LEDInit();
     for (;;)
     {
-        LEDColor(green);
-        VIDEO_DelayMs(10);
-        LEDColor(black);
-        VIDEO_DelayMs(10);
+        LEDSwitch();
+        VIDEO_DelayMs(1000);
     }
     return 0;
 }
@@ -35,6 +36,8 @@ int main()
     BOARD_InitBootClocks();
     BOARD_InitBootPins();
     BOARD_InitBootPeripherals();
+    BOARD_InitPins();
+    
     uint8_t t;
     OLED_Init(); //初始化OLED
     //NVIC_SetPriorityGrouping(NVIC_Group2);
@@ -62,6 +65,7 @@ int main()
 #endif
 
 #if test_num == 2
+
 #include "fsl_flexio_i2c_master.h"
 #include <string>
 
@@ -109,5 +113,33 @@ int main()
     }
     return 0;
 }
+
+#endif
+
+#if test_num == 3
+// pit test
+int count = 0;
+int main() {
+    DisableGlobalIRQ();
+    BOARD_InitBootClocks();
+    BOARD_InitBootPins();
+    BOARD_InitBootPeripherals();
+    BOARD_InitPins();
+    
+    EnableGlobalIRQ(0);
+
+    for (;;)
+    {
+        LEDSwitch();
+        VIDEO_DelayMs(100);
+
+
+    }
+    return 0;
+}
+
+#endif
+
+#if test_num  == 4
 
 #endif

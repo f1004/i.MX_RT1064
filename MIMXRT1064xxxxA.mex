@@ -35,12 +35,21 @@
                <pin_label pin_num="B12" pin_signal="GPIO_B1_07" label="led_green" identifier="led_green"/>
                <pin_label pin_num="C7" pin_signal="GPIO_EMC_41" label="led_blue" identifier="led_blue"/>
                <pin_label pin_num="B8" pin_signal="GPIO_B0_05" label="oled_dc" identifier="oled_res;oled_dc"/>
-               <pin_label pin_num="B9" pin_signal="GPIO_B0_08" label="oled_res" identifier="oled_res"/>
+               <pin_label pin_num="B9" pin_signal="GPIO_B0_08" label="led" identifier="oled_res;led"/>
                <pin_label pin_num="B7" pin_signal="GPIO_EMC_39" label="oled_cs" identifier="oled_cs"/>
                <pin_label pin_num="B6" pin_signal="GPIO_EMC_14" label="oled_dc" identifier="oled_dc"/>
                <pin_label pin_num="A4" pin_signal="GPIO_EMC_17" label="oled_res" identifier="oled_res"/>
                <pin_label pin_num="A3" pin_signal="GPIO_EMC_20" label="oled_d1" identifier="oled_d1"/>
                <pin_label pin_num="A2" pin_signal="GPIO_EMC_27" label="oled_d0" identifier="oled_d0"/>
+               <pin_label pin_num="F14" pin_signal="GPIO_AD_B0_09" label="led" identifier="test;led"/>
+               <pin_label pin_num="G11" pin_signal="GPIO_AD_B0_03" label="pit_0" identifier="pit_0"/>
+               <pin_label pin_num="D7" pin_signal="GPIO_B0_00" label="qtmr1_c0" identifier="qtmr1_c0"/>
+               <pin_label pin_num="E7" pin_signal="GPIO_B0_01" label="qtmr1_c1" identifier="qtmr1_c1"/>
+               <pin_label pin_num="E8" pin_signal="GPIO_B0_02" label="qtmr1_c2" identifier="qtmr1_c2"/>
+               <pin_label pin_num="A12" pin_signal="GPIO_B1_08" label="qtmr1_c3" identifier="qtmr1_c3"/>
+               <pin_label pin_num="A13" pin_signal="GPIO_B1_09" label="oled_d0" identifier="oled_d0"/>
+               <pin_label pin_num="B13" pin_signal="GPIO_B1_10" label="oled_d1" identifier="oled_d1"/>
+               <pin_label pin_num="C13" pin_signal="GPIO_B1_11" label="oled_res"/>
             </pin_labels>
          </pins_profile>
          <functions_list>
@@ -57,12 +66,22 @@
                         <data>true</data>
                      </feature>
                   </dependency>
+                  <dependency resourceType="Peripheral" resourceId="TMR1" description="Peripheral TMR1 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
                   <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Pins initialization requires the COMMON Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
                      <feature name="enabled" evaluation="equal" configuration="core0">
                         <data>true</data>
                      </feature>
                   </dependency>
                   <dependency resourceType="SWComponent" resourceId="platform.drivers.iomuxc" description="Pins initialization requires the IOMUXC Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.igpio" description="Pins initialization requires the IGPIO Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
                      <feature name="enabled" evaluation="equal" configuration="core0">
                         <data>true</data>
                      </feature>
@@ -75,22 +94,20 @@
                      </pin_features>
                   </pin>
                   <pin peripheral="FLEXIO1" signal="IO, 02" pin_num="F4" pin_signal="GPIO_EMC_02"/>
-                  <pin peripheral="GPIO3" signal="gpio_io, 26" pin_num="A7" pin_signal="GPIO_EMC_40">
+                  <pin peripheral="GPIO1" signal="gpio_io, 09" pin_num="F14" pin_signal="GPIO_AD_B0_09">
                      <pin_features>
-                        <pin_feature name="speed" value="MHZ_100"/>
-                     </pin_features>
-                  </pin>
-                  <pin peripheral="GPIO2" signal="gpio_io, 23" pin_num="B12" pin_signal="GPIO_B1_07"/>
-                  <pin peripheral="GPIO3" signal="gpio_io, 27" pin_num="C7" pin_signal="GPIO_EMC_41"/>
-                  <pin peripheral="GPIO4" signal="gpio_io, 27" pin_num="A2" pin_signal="GPIO_EMC_27">
-                     <pin_features>
+                        <pin_feature name="identifier" value="led"/>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                        <pin_feature name="gpio_init_state" value="false"/>
+                        <pin_feature name="pull_up_down_config" value="Pull_Up_100K_Ohm"/>
                         <pin_feature name="pull_keeper_select" value="Keeper"/>
+                        <pin_feature name="drive_strength" value="R0_6"/>
                      </pin_features>
                   </pin>
-                  <pin peripheral="GPIO4" signal="gpio_io, 20" pin_num="A3" pin_signal="GPIO_EMC_20"/>
-                  <pin peripheral="GPIO4" signal="gpio_io, 17" pin_num="A4" pin_signal="GPIO_EMC_17"/>
-                  <pin peripheral="GPIO4" signal="gpio_io, 14" pin_num="B6" pin_signal="GPIO_EMC_14"/>
-                  <pin peripheral="GPIO3" signal="gpio_io, 25" pin_num="B7" pin_signal="GPIO_EMC_39"/>
+                  <pin peripheral="TMR1" signal="TIMER, 0" pin_num="D7" pin_signal="GPIO_B0_00"/>
+                  <pin peripheral="TMR1" signal="TIMER, 1" pin_num="E7" pin_signal="GPIO_B0_01"/>
+                  <pin peripheral="TMR1" signal="TIMER, 2" pin_num="E8" pin_signal="GPIO_B0_02"/>
+                  <pin peripheral="TMR1" signal="TIMER, 3" pin_num="A12" pin_signal="GPIO_B1_08"/>
                </pins>
             </function>
          </functions_list>
@@ -251,6 +268,26 @@
                   <data type="Version">2.1.5</data>
                </feature>
             </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.qtmr" description="在工具链/IDT 工程中未找到 QTMR Driver。" problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.qtmr" description="工具链/IDT 工程中，该版本的 QTMR Driver 不被支持。所需的：${required_value},，实际的： ${actual_value}。" problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="equivalent">
+                  <data type="Version">2.0.0</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.pit" description="在工具链/IDT 工程中未找到 PIT Driver。" problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.pit" description="工具链/IDT 工程中，该版本的 PIT Driver 不被支持。所需的：${required_value},，实际的： ${actual_value}。" problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="equivalent">
+                  <data type="Version">2.0.0</data>
+               </feature>
+            </dependency>
          </dependencies>
          <generated_project_files>
             <file path="board/peripherals.c" update_enabled="true"/>
@@ -287,6 +324,26 @@
                   <dependency resourceType="PeripheralUnifiedSignal" resourceId="FLEXIO1.flexio_d.02" description="Signal IO of the channel 2 of the peripheral FLEXIO1 is not routed." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
                      <feature name="routed" evaluation="equal">
                         <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="TMR1.tmr_sec_in.0" description="Timer input 0 of peripheral TMR1 is not routed" problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="equal">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="TMR1.tmr_sec_in.1" description="Timer input 1 of peripheral TMR1 is not routed" problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="equal">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="TMR1.tmr_sec_in.3" description="Timer input 3 of peripheral TMR1 is not routed" problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="equal">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="ClockOutput" resourceId="PERCLK_CLK_ROOT" description="PERCLK_CLK_ROOT is inactive." problem_level="2" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="frequency" evaluation="greaterThan">
+                        <data type="Frequency" unit="Hz">0</data>
                      </feature>
                   </dependency>
                </dependencies>
@@ -352,6 +409,102 @@
                            <setting name="subaddressSize" value="1"/>
                            <setting name="dataSize" value="1"/>
                         </struct>
+                     </config_set>
+                  </instance>
+                  <instance name="QuadTimer_1" type="qtmr" type_id="qtmr_460dd7aa3f3371843c2548acd54252b0" mode="general" peripheral="TMR1" enabled="true">
+                     <config_set name="fsl_qtmr">
+                        <setting name="clockSource" value="BusInterfaceClock"/>
+                        <setting name="clockSourceFreq" value="BOARD_BootClockRUN"/>
+                        <array name="qtmr_channels">
+                           <struct name="0">
+                              <setting name="channel_prefix_id" value="Channel_0"/>
+                              <setting name="channel" value="kQTMR_Channel_0"/>
+                              <setting name="primarySource" value="kQTMR_ClockCounter0InputPin"/>
+                              <setting name="primarySourceFreq" value="0"/>
+                              <setting name="secondarySource" value="kQTMR_Counter1InputPin"/>
+                              <setting name="countingMode" value="kQTMR_PriSrcRiseEdgeSecDir"/>
+                              <setting name="enableMasterMode" value="false"/>
+                              <setting name="enableExternalForce" value="false"/>
+                              <setting name="faultFilterCount" value="3"/>
+                              <setting name="faultFilterPeriod" value="0"/>
+                              <setting name="debugMode" value="kQTMR_RunNormalInDebug"/>
+                              <setting name="timerModeInit" value="inputCapture"/>
+                              <struct name="inputCaptureMode">
+                                 <setting name="inputPolarity" value="false"/>
+                                 <setting name="reloadOnCapture" value="false"/>
+                                 <setting name="captureMode" value="kQTMR_NoCapture"/>
+                              </struct>
+                              <setting name="dmaIntMode" value="polling"/>
+                           </struct>
+                           <struct name="1">
+                              <setting name="channel_prefix_id" value="Channel_1"/>
+                              <setting name="channel" value="kQTMR_Channel_1"/>
+                              <setting name="primarySource" value="kQTMR_ClockCounter2Output"/>
+                              <setting name="primarySourceFreq" value="0"/>
+                              <setting name="secondarySource" value="kQTMR_Counter3InputPin"/>
+                              <setting name="countingMode" value="kQTMR_PriSrcRiseEdgeSecDir"/>
+                              <setting name="enableMasterMode" value="false"/>
+                              <setting name="enableExternalForce" value="false"/>
+                              <setting name="faultFilterCount" value="3"/>
+                              <setting name="faultFilterPeriod" value="0"/>
+                              <setting name="debugMode" value="kQTMR_RunNormalInDebug"/>
+                              <setting name="timerModeInit" value="inputCapture"/>
+                              <struct name="inputCaptureMode">
+                                 <setting name="inputPolarity" value="false"/>
+                                 <setting name="reloadOnCapture" value="false"/>
+                                 <setting name="captureMode" value="kQTMR_NoCapture"/>
+                              </struct>
+                              <setting name="dmaIntMode" value="polling"/>
+                           </struct>
+                        </array>
+                        <struct name="interruptVector">
+                           <setting name="enable_irq" value="false"/>
+                           <struct name="interrupt">
+                              <setting name="IRQn" value="TMR1_IRQn"/>
+                              <setting name="enable_priority" value="false"/>
+                              <setting name="priority" value="0"/>
+                              <setting name="enable_custom_name" value="false"/>
+                           </struct>
+                        </struct>
+                     </config_set>
+                  </instance>
+                  <instance name="eDMA_1" type="edma" type_id="edma_a23fca76a894e1bcdf9d01a687505ff9" mode="basic" peripheral="DMA0" enabled="false">
+                     <config_set name="fsl_edma" quick_selection="default">
+                        <struct name="common_settings">
+                           <setting name="enableContinuousLinkMode" value="false"/>
+                           <setting name="enableHaltOnError" value="true"/>
+                           <setting name="enableRoundRobinArbitration" value="false"/>
+                           <setting name="enableDebugMode" value="false"/>
+                        </struct>
+                        <array name="dma_table">
+                           <struct name="0"/>
+                        </array>
+                        <array name="edma_channels"/>
+                     </config_set>
+                  </instance>
+                  <instance name="PIT_1" type="pit" type_id="pit_a4782ba5223c8a2527ba91aeb2bc4159" mode="LPTMR_GENERAL" peripheral="PIT" enabled="true">
+                     <config_set name="fsl_pit">
+                        <setting name="enableRunInDebug" value="false"/>
+                        <setting name="enableSharedInterrupt" value="true"/>
+                        <struct name="sharedInterrupt">
+                           <setting name="IRQn" value="PIT_IRQn"/>
+                           <setting name="enable_priority" value="false"/>
+                           <setting name="priority" value="0"/>
+                           <setting name="enable_custom_name" value="false"/>
+                        </struct>
+                        <struct name="timingConfig">
+                           <setting name="clockSource" value="BusInterfaceClock"/>
+                           <setting name="clockSourceFreq" value="BOARD_BootClockRUN"/>
+                        </struct>
+                        <array name="channels">
+                           <struct name="0">
+                              <setting name="channelNumber" value="0"/>
+                              <setting name="enableChain" value="false"/>
+                              <setting name="timerPeriod" value="5ms"/>
+                              <setting name="startTimer" value="true"/>
+                              <setting name="enableInterrupt" value="true"/>
+                           </struct>
+                        </array>
                      </config_set>
                   </instance>
                </instances>

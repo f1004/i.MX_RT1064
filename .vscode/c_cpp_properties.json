@@ -11,7 +11,10 @@
                 "D:\\RT1064\\board/**",
                 "C:/Users/Plect/IAR-CMSIS-Packs/NXP/MIMXRT1064_DFP/12.0.0/components/video",
                 "C:/Users/Plect/IAR-CMSIS-Packs/NXP/MIMXRT1064_DFP/12.0.0/drivers",
-                "C:\\Users\\Plect\\IAR-CMSIS-Packs\\ARM\\CMSIS\\5.6.0\\CMSIS\\Core\\Include"
+                "C:\\Users\\Plect\\IAR-CMSIS-Packs\\ARM\\CMSIS\\5.6.0\\CMSIS\\Core\\Include",
+                "/mnt/c/Users/Plect/IAR-CMSIS-Packs/NXP/MIMXRT1064_DFP/12.0.0/drivers",
+                "/mnt/c/Users/Plect/IAR-CMSIS-Packs/NXP/MIMXRT1064_DFP/12.0.0/components/video",
+                "${workspaceFolder}/board"
             ],
             "defines": [
                 "_DEBUG",
@@ -20,7 +23,7 @@
             ],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",
-            "cppStandard": "c++17",
+            "cppStandard": "c++20",
             "intelliSenseMode": "clang-x64"
         }
     ],

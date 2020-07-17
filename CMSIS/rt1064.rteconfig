@@ -288,6 +288,16 @@
 
     </component>
 
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="qtmr" Cvendor="NXP" Cversion="2.0.0" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_qtmr.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_qtmr.h"/>
+
+    </component>
+
     <component Cclass="Device" Cgroup="SDK Drivers" Csub="video-common" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1">
 
       <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
@@ -305,6 +315,26 @@
       <file category="sourceC" deviceDependent="1" name="components/video/i2c/fsl_video_i2c.c"/>
 
       <file category="header" deviceDependent="1" name="components/video/i2c/fsl_video_i2c.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="xbara" Cvendor="NXP" Cversion="2.0.4" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_xbara.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_xbara.h"/>
+
+    </component>
+
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="xbarb" Cvendor="NXP" Cversion="2.0.1" deviceDependent="1">
+
+      <package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/>
+
+      <file category="sourceC" deviceDependent="1" name="drivers/fsl_xbarb.c"/>
+
+      <file category="header" deviceDependent="1" name="drivers/fsl_xbarb.h"/>
 
     </component>
 

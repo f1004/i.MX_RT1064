@@ -66,7 +66,7 @@
                 </option>
                 <option>
                     <name>OGLastSavedByProductVersion</name>
-                    <state>8.32.1.18618</state>
+                    <state>8.40.1.21529</state>
                 </option>
                 <option>
                     <name>GeneralEnableMisra</name>
@@ -116,7 +116,7 @@
                 </option>
                 <option>
                     <name>GBECoreSlave</name>
-                    <version>26</version>
+                    <version>27</version>
                     <state>41</state>
                 </option>
                 <option>
@@ -133,7 +133,7 @@
                 </option>
                 <option>
                     <name>CoreVariant</name>
-                    <version>26</version>
+                    <version>27</version>
                     <state>41</state>
                 </option>
                 <option>
@@ -143,12 +143,12 @@
                 <option>
                     <name>FPU2</name>
                     <version>0</version>
-                    <state>0</state>
+                    <state>7</state>
                 </option>
                 <option>
                     <name>NrRegs</name>
                     <version>0</version>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>NEON</name>
@@ -156,7 +156,7 @@
                 </option>
                 <option>
                     <name>GFPUCoreSlave2</name>
-                    <version>26</version>
+                    <version>27</version>
                     <state>41</state>
                 </option>
                 <option>
@@ -695,7 +695,7 @@
             <name>ILINK</name>
             <archiveVersion>0</archiveVersion>
             <data>
-                <version>22</version>
+                <version>23</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>1</debug>
                 <option>
@@ -776,7 +776,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>lnk0t.icf</state>
+                    <state>${CMSIS_PACK_PATH_NXP#MIMXRT1064_DFP#12.0.0}$\iar\MIMXRT1064xxxxx_ram.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -836,7 +836,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state></state>
+                    <state>__iar_program_start</state>
                 </option>
                 <option>
                     <name>DoFill</name>
@@ -1009,11 +1009,27 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>###Unitialized###</state>
+                    <state>rt1064_import_lib.o</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
                     <state>1</state>
+                </option>
+                <option>
+                    <name>IlinkRawBinaryFile2</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>IlinkRawBinarySymbol2</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>IlinkRawBinarySegment2</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>IlinkRawBinaryAlign2</name>
+                    <state></state>
                 </option>
             </data>
         </settings>
@@ -1159,7 +1175,7 @@
                 </option>
                 <option>
                     <name>GBECoreSlave</name>
-                    <version>26</version>
+                    <version>27</version>
                     <state>38</state>
                 </option>
                 <option>
@@ -1176,7 +1192,7 @@
                 </option>
                 <option>
                     <name>CoreVariant</name>
-                    <version>26</version>
+                    <version>27</version>
                     <state>41</state>
                 </option>
                 <option>
@@ -1199,7 +1215,7 @@
                 </option>
                 <option>
                     <name>GFPUCoreSlave2</name>
-                    <version>26</version>
+                    <version>27</version>
                     <state>38</state>
                 </option>
                 <option>
@@ -1735,7 +1751,7 @@
             <name>ILINK</name>
             <archiveVersion>0</archiveVersion>
             <data>
-                <version>22</version>
+                <version>23</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>0</debug>
                 <option>
@@ -2055,6 +2071,22 @@
                     <name>OILinkExtraOption</name>
                     <state>1</state>
                 </option>
+                <option>
+                    <name>IlinkRawBinaryFile2</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>IlinkRawBinarySymbol2</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>IlinkRawBinarySegment2</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>IlinkRawBinaryAlign2</name>
+                    <state></state>
+                </option>
             </data>
         </settings>
         <settings>
@@ -2086,6 +2118,21 @@
     </configuration>
     <group>
         <name>board</name>
+        <group>
+            <name>User</name>
+            <file>
+                <name>$PROJ_DIR$\..\User\delay.cc</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\User\delay.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\User\irq_handles.cpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\User\main.cpp</name>
+            </file>
+        </group>
         <file>
             <name>$PROJ_DIR$\..\board\clock_config.c</name>
         </file>
@@ -2126,6 +2173,16 @@
     <group>
         <name>CMSIS-Pack</name>
         <tag>CMSISPack.Component</tag>
+        <file>
+            <name>$PROJ_DIR$\RTE\RTE_Components.h</name>
+        </file>
+        <group>
+            <name>Device.SDK Drivers qtmr</name>
+            <tag>CMSISPack.Component</tag>
+            <file>
+                <name>${CMSIS_PACK_PATH_NXP#MIMXRT1064_DFP#12.0.0}$\drivers/fsl_qtmr.c</name>
+            </file>
+        </group>
         <group>
             <name>Device.SDK Drivers camera-receiver-csi</name>
             <tag>CMSISPack.Component</tag>
@@ -2133,9 +2190,6 @@
                 <name>${CMSIS_PACK_PATH_NXP#MIMXRT1064_DFP#12.0.0}$\components/video/camera/receiver/csi/fsl_csi_camera_adapter.c</name>
             </file>
         </group>
-        <file>
-            <name>$PROJ_DIR$\RTE\RTE_Components.h</name>
-        </file>
         <group>
             <name>Device.Startup MIMXRT1064_startup</name>
             <tag>CMSISPack.Component</tag>
@@ -2382,18 +2436,20 @@
                 <name>${CMSIS_PACK_PATH_NXP#MIMXRT1064_DFP#12.0.0}$\drivers/fsl_adc.c</name>
             </file>
         </group>
-    </group>
-    <group>
-        <name>User</name>
-        <file>
-            <name>$PROJ_DIR$\..\User\delay.cc</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\User\delay.h</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\User\main.cpp</name>
-        </file>
+        <group>
+            <name>Device.SDK Drivers xbarb</name>
+            <tag>CMSISPack.Component</tag>
+            <file>
+                <name>${CMSIS_PACK_PATH_NXP#MIMXRT1064_DFP#12.0.0}$\drivers/fsl_xbarb.c</name>
+            </file>
+        </group>
+        <group>
+            <name>Device.SDK Drivers xbara</name>
+            <tag>CMSISPack.Component</tag>
+            <file>
+                <name>${CMSIS_PACK_PATH_NXP#MIMXRT1064_DFP#12.0.0}$\drivers/fsl_xbara.c</name>
+            </file>
+        </group>
     </group>
     <cmsisPackSettings>
         <rte>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
@@ -2541,6 +2597,11 @@
       &lt;file category="sourceC" deviceDependent="1" name="drivers/fsl_pwm.c"/&gt;
       &lt;file category="header" deviceDependent="1" name="drivers/fsl_pwm.h"/&gt;
     &lt;/component&gt;
+    &lt;component Cclass="Device" Cgroup="SDK Drivers" Csub="qtmr" Cvendor="NXP" Cversion="2.0.0" deviceDependent="1"&gt;
+      &lt;package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/&gt;
+      &lt;file category="sourceC" deviceDependent="1" name="drivers/fsl_qtmr.c"/&gt;
+      &lt;file category="header" deviceDependent="1" name="drivers/fsl_qtmr.h"/&gt;
+    &lt;/component&gt;
     &lt;component Cclass="Device" Cgroup="SDK Drivers" Csub="video-common" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1"&gt;
       &lt;package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/&gt;
       &lt;file category="sourceC" deviceDependent="1" name="components/video/fsl_video_common.c"/&gt;
@@ -2550,6 +2611,16 @@
       &lt;package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/&gt;
       &lt;file category="sourceC" deviceDependent="1" name="components/video/i2c/fsl_video_i2c.c"/&gt;
       &lt;file category="header" deviceDependent="1" name="components/video/i2c/fsl_video_i2c.h"/&gt;
+    &lt;/component&gt;
+    &lt;component Cclass="Device" Cgroup="SDK Drivers" Csub="xbara" Cvendor="NXP" Cversion="2.0.4" deviceDependent="1"&gt;
+      &lt;package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/&gt;
+      &lt;file category="sourceC" deviceDependent="1" name="drivers/fsl_xbara.c"/&gt;
+      &lt;file category="header" deviceDependent="1" name="drivers/fsl_xbara.h"/&gt;
+    &lt;/component&gt;
+    &lt;component Cclass="Device" Cgroup="SDK Drivers" Csub="xbarb" Cvendor="NXP" Cversion="2.0.1" deviceDependent="1"&gt;
+      &lt;package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/&gt;
+      &lt;file category="sourceC" deviceDependent="1" name="drivers/fsl_xbarb.c"/&gt;
+      &lt;file category="header" deviceDependent="1" name="drivers/fsl_xbarb.h"/&gt;
     &lt;/component&gt;
     &lt;component Cclass="Device" Cgroup="SDK Project Template" Csub="RTE_Device" Cvendor="NXP" Cversion="1.0.0" deviceDependent="1"&gt;
       &lt;package name="MIMXRT1064_DFP" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="12.0.0"/&gt;
@@ -2573,7 +2644,7 @@
       &lt;file attr="config" category="sourceC" deviceDependent="1" name="system_MIMXRT1064.c" version="1.0.0"/&gt;
       &lt;file attr="config" category="header" deviceDependent="1" name="system_MIMXRT1064.h" version="1.0.0"/&gt;
     &lt;/component&gt;
-    &lt;component Cbundle="MCUXpresso SDK Operating System" Cclass="Operating System" Cgroup="FreeRTOS Operating System" Csub="freertos" Cvendor="NXP" Cversion="9.0.0"&gt;
+    &lt;component Cbundle="MCUXpresso SDK Operating System" Cbundleversion="10.0.0" Cclass="Operating System" Cgroup="FreeRTOS Operating System" Csub="freertos" Cvendor="NXP" Cversion="9.0.0"&gt;
       &lt;package name="Middleware" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="10.0.0"/&gt;
       &lt;file category="doc" name="freertos/License/license.txt"/&gt;
       &lt;file category="header" name="freertos/Source/include/FreeRTOS.h"/&gt;
@@ -2601,7 +2672,7 @@
       &lt;file category="sourceC" name="freertos/Source/timers.c"/&gt;
       &lt;file category="doc" name="freertos/FreeRTOS_for_MCUXpresso_SDK_v2.0.txt"/&gt;
     &lt;/component&gt;
-    &lt;component Cbundle="MCUXpresso SDK Operating System" Cclass="Operating System" Cgroup="FreeRTOS Operating System" Csub="template_application.freertos" Cvendor="NXP" Cversion="9.0.0"&gt;
+    &lt;component Cbundle="MCUXpresso SDK Operating System" Cbundleversion="10.0.0" Cclass="Operating System" Cgroup="FreeRTOS Operating System" Csub="template_application.freertos" Cvendor="NXP" Cversion="9.0.0"&gt;
       &lt;package name="Middleware" url="http://mcuxpresso.nxp.com/cmsis_pack/repo/" vendor="NXP" version="10.0.0"/&gt;
       &lt;file category="sourceC" name="freertos/Source/portable/MemMang/heap_4.c"/&gt;
       &lt;file category="sourceC" name="freertos/Source/portable/MemMang/heap_1.c"/&gt;
@@ -2611,15 +2682,15 @@
     &lt;/component&gt;
   &lt;/components&gt;
   &lt;apis&gt;
-    &lt;api Capiversion="2.2.0" Cclass="CMSIS Driver" Cgroup="USB Device" Cvendor="ARM" Cversion="2.2.0" exclusive="0"&gt;
-      &lt;package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.6.0"/&gt;
-      &lt;file category="doc" name="CMSIS/Documentation/Driver/html/group__usbd__interface__gr.html"/&gt;
-      &lt;file category="header" name="CMSIS/Driver/Include/Driver_USBD.h"/&gt;
-    &lt;/api&gt;
     &lt;api Capiversion="2.2.0" Cclass="CMSIS Driver" Cgroup="USB Host" Cvendor="ARM" Cversion="2.2.0" exclusive="0"&gt;
       &lt;package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.6.0"/&gt;
       &lt;file category="doc" name="CMSIS/Documentation/Driver/html/group__usbh__interface__gr.html"/&gt;
       &lt;file category="header" name="CMSIS/Driver/Include/Driver_USBH.h"/&gt;
+    &lt;/api&gt;
+    &lt;api Capiversion="2.2.0" Cclass="CMSIS Driver" Cgroup="USB Device" Cvendor="ARM" Cversion="2.2.0" exclusive="0"&gt;
+      &lt;package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.6.0"/&gt;
+      &lt;file category="doc" name="CMSIS/Documentation/Driver/html/group__usbd__interface__gr.html"/&gt;
+      &lt;file category="header" name="CMSIS/Driver/Include/Driver_USBD.h"/&gt;
     &lt;/api&gt;
   &lt;/apis&gt;
   &lt;packages useAllLatestPacks="1"/&gt;

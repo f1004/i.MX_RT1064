@@ -47,45 +47,30 @@ void BOARD_InitBootPins(void);
 #define BOARD_INITPINS_flexio_i2c_SCL_SIGNAL                                  IO   /*!< FLEXIO1 signal: IO */
 #define BOARD_INITPINS_flexio_i2c_SCL_CHANNEL                                 2U   /*!< FLEXIO1 IO channel: 02 */
 
-/* GPIO_EMC_40 (coord A7), led_red */
-#define BOARD_INITPINS_led_red_GPIO                                        GPIO3   /*!< GPIO device name: GPIO3 */
-#define BOARD_INITPINS_led_red_PORT                                        GPIO3   /*!< PORT device name: GPIO3 */
-#define BOARD_INITPINS_led_red_PIN                                           26U   /*!< GPIO3 pin index: 26 */
+/* GPIO_AD_B0_09 (coord F14), led */
+#define BOARD_INITPINS_led_GPIO                                            GPIO1   /*!< GPIO device name: GPIO1 */
+#define BOARD_INITPINS_led_PORT                                            GPIO1   /*!< PORT device name: GPIO1 */
+#define BOARD_INITPINS_led_PIN                                                9U   /*!< GPIO1 pin index: 9 */
 
-/* GPIO_B1_07 (coord B12), led_green */
-#define BOARD_INITPINS_led_green_GPIO                                      GPIO2   /*!< GPIO device name: GPIO2 */
-#define BOARD_INITPINS_led_green_PORT                                      GPIO2   /*!< PORT device name: GPIO2 */
-#define BOARD_INITPINS_led_green_PIN                                         23U   /*!< GPIO2 pin index: 23 */
+/* GPIO_B0_00 (coord D7), qtmr1_c0 */
+#define BOARD_INITPINS_qtmr1_c0_PERIPHERAL                                  TMR1   /*!< Device name: TMR1 */
+#define BOARD_INITPINS_qtmr1_c0_SIGNAL                                     TIMER   /*!< TMR1 signal: TIMER */
+#define BOARD_INITPINS_qtmr1_c0_CHANNEL                                       0U   /*!< TMR1 TIMER channel: 0 */
 
-/* GPIO_EMC_41 (coord C7), led_blue */
-#define BOARD_INITPINS_led_blue_GPIO                                       GPIO3   /*!< GPIO device name: GPIO3 */
-#define BOARD_INITPINS_led_blue_PORT                                       GPIO3   /*!< PORT device name: GPIO3 */
-#define BOARD_INITPINS_led_blue_PIN                                          27U   /*!< GPIO3 pin index: 27 */
+/* GPIO_B0_01 (coord E7), qtmr1_c1 */
+#define BOARD_INITPINS_qtmr1_c1_PERIPHERAL                                  TMR1   /*!< Device name: TMR1 */
+#define BOARD_INITPINS_qtmr1_c1_SIGNAL                                     TIMER   /*!< TMR1 signal: TIMER */
+#define BOARD_INITPINS_qtmr1_c1_CHANNEL                                       1U   /*!< TMR1 TIMER channel: 1 */
 
-/* GPIO_EMC_27 (coord A2), oled_d0 */
-#define BOARD_INITPINS_oled_d0_GPIO                                        GPIO4   /*!< GPIO device name: GPIO4 */
-#define BOARD_INITPINS_oled_d0_PORT                                        GPIO4   /*!< PORT device name: GPIO4 */
-#define BOARD_INITPINS_oled_d0_PIN                                           27U   /*!< GPIO4 pin index: 27 */
+/* GPIO_B0_02 (coord E8), qtmr1_c2 */
+#define BOARD_INITPINS_qtmr1_c2_PERIPHERAL                                  TMR1   /*!< Device name: TMR1 */
+#define BOARD_INITPINS_qtmr1_c2_SIGNAL                                     TIMER   /*!< TMR1 signal: TIMER */
+#define BOARD_INITPINS_qtmr1_c2_CHANNEL                                       2U   /*!< TMR1 TIMER channel: 2 */
 
-/* GPIO_EMC_20 (coord A3), oled_d1 */
-#define BOARD_INITPINS_oled_d1_GPIO                                        GPIO4   /*!< GPIO device name: GPIO4 */
-#define BOARD_INITPINS_oled_d1_PORT                                        GPIO4   /*!< PORT device name: GPIO4 */
-#define BOARD_INITPINS_oled_d1_PIN                                           20U   /*!< GPIO4 pin index: 20 */
-
-/* GPIO_EMC_17 (coord A4), oled_res */
-#define BOARD_INITPINS_oled_res_GPIO                                       GPIO4   /*!< GPIO device name: GPIO4 */
-#define BOARD_INITPINS_oled_res_PORT                                       GPIO4   /*!< PORT device name: GPIO4 */
-#define BOARD_INITPINS_oled_res_PIN                                          17U   /*!< GPIO4 pin index: 17 */
-
-/* GPIO_EMC_14 (coord B6), oled_dc */
-#define BOARD_INITPINS_oled_dc_GPIO                                        GPIO4   /*!< GPIO device name: GPIO4 */
-#define BOARD_INITPINS_oled_dc_PORT                                        GPIO4   /*!< PORT device name: GPIO4 */
-#define BOARD_INITPINS_oled_dc_PIN                                           14U   /*!< GPIO4 pin index: 14 */
-
-/* GPIO_EMC_39 (coord B7), oled_cs */
-#define BOARD_INITPINS_oled_cs_GPIO                                        GPIO3   /*!< GPIO device name: GPIO3 */
-#define BOARD_INITPINS_oled_cs_PORT                                        GPIO3   /*!< PORT device name: GPIO3 */
-#define BOARD_INITPINS_oled_cs_PIN                                           25U   /*!< GPIO3 pin index: 25 */
+/* GPIO_B1_08 (coord A12), qtmr1_c3 */
+#define BOARD_INITPINS_qtmr1_c3_PERIPHERAL                                  TMR1   /*!< Device name: TMR1 */
+#define BOARD_INITPINS_qtmr1_c3_SIGNAL                                     TIMER   /*!< TMR1 signal: TIMER */
+#define BOARD_INITPINS_qtmr1_c3_CHANNEL                                       3U   /*!< TMR1 TIMER channel: 3 */
 
 
 /*!

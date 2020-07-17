@@ -54,7 +54,9 @@
 			"stdexcept": "cpp",
 			"streambuf": "cpp",
 			"typeinfo": "cpp",
-			"bit": "cpp"
+			"bit": "cpp",
+			"fsl_common.h": "c",
+			"fsl_iomuxc.h": "c"
 		}
 	}
 }

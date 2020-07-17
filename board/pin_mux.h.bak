@@ -72,10 +72,10 @@ void BOARD_InitBootPins(void);
 #define BOARD_INITPINS_oled_cs_PORT                                        GPIO3   /*!< PORT device name: GPIO3 */
 #define BOARD_INITPINS_oled_cs_PIN                                           25U   /*!< GPIO3 pin index: 25 */
 
-/* GPIO_B0_08 (coord B9), led */
-#define BOARD_INITPINS_led_GPIO                                            GPIO2   /*!< GPIO device name: GPIO2 */
-#define BOARD_INITPINS_led_PORT                                            GPIO2   /*!< PORT device name: GPIO2 */
-#define BOARD_INITPINS_led_PIN                                                8U   /*!< GPIO2 pin index: 8 */
+/* GPIO_AD_B0_09 (coord F14), test */
+#define BOARD_INITPINS_test_GPIO                                           GPIO1   /*!< GPIO device name: GPIO1 */
+#define BOARD_INITPINS_test_PORT                                           GPIO1   /*!< PORT device name: GPIO1 */
+#define BOARD_INITPINS_test_PIN                                               9U   /*!< GPIO1 pin index: 9 */
 
 
 /*!

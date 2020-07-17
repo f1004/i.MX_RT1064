@@ -13,6 +13,7 @@
 */
 #define CMSIS_device_header "fsl_device_registers.h"
 
+/* NXP.MCUXpresso SDK Operating System::Operating System.FreeRTOS Operating System.freertos */
 #define FSL_RTOS_FREE_RTOS 
 #define SDK_OS_FREE_RTOS
 
